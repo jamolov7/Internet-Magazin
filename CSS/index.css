@@ -7,7 +7,7 @@
 }
 :root {
     --dark-light: #333333;
-    --dark: #141414:
+    --dark-black: #141414:
     --activ-red: #ff0000;
 }
 body {
@@ -205,3 +205,197 @@ a {
     color: red;
 }
 /* Icons css end */
+
+/* Main css start */
+.main-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+    padding: 50px;
+}
+.main-card {
+    display: flex;
+    margin: 0 auto;
+    height: 400px;
+}
+.main-card.main-img {
+    background: url(../img/Home-img/card/knif\ card\ 10.png) center no-repeat;
+    background-size: cover;
+    width: 80%;
+    height: 400px;
+    position: relative;
+    border-radius: 20px;
+}
+.main-card.main-img div {
+    position: absolute;
+    bottom: 10px;
+    color: #fff;
+    font-weight: 700;
+    left: 10px;
+}
+.main-card-div {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 0 20px;
+}
+.main-img {
+    width: 100px;
+}
+.main-imgs img {
+    background-color: #141414;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+}
+.main-imgs span {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    color: #fff;
+    font-size: x-large;
+}
+.m-bold {
+    font-weight: 700;
+    color: #fff;
+    margin-top: 10px;
+}
+.m-price {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    justify-content: space-between;
+}
+.m-price span {
+    color: red;
+}
+.main-img2 {
+    background: url(../img/Home-img/card/instagram.png) center no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+}
+.main-img2 div {
+    position: absolute;
+    right: 10px; top: 10px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.main-img2 div img {
+    margin-right: 10px;
+}
+/* Main-res css start */
+#main-res {
+    display: none;
+}
+.main-res-all {
+    width: 100%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.res-card {
+    display: block;
+    margin: 10px auto;
+    color: #fff;
+}
+.res-bold {
+    color: #fff;
+    font-weight: 700;
+    margin: 10px 0;
+}
+.res-slid {
+    padding: 10px 0;
+    background-color: #141414;
+    text-align: center;
+}
+.res-slid img {
+    width: 75%;
+}
+.res-k {
+    background-color: #141414;
+    text-align: center;
+}
+.res-k img {
+    width: 75%;
+    padding: 10px 0;
+}
+.res-kinif {
+    background-color: #141414;
+    text-align: center;
+    color: #fff;
+}
+.res-kinif img {
+    width: 300px;
+}
+.res-x {
+    margin: 10px auto;
+    width: 135px;
+    border-bottom: 2px solid red;
+}
+.res-text {
+    margin: 10px auto;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    padding: 10px;
+}
+.res-harak {
+    color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.r-plus {
+    font-size: xxx-large;
+}
+.res-t {
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+/* Main-res css end */
+@media screen and (max-width: 1400px) {
+    .main-cards {
+        padding: 10px;
+    }
+    .main-card {
+        margin: 20px auto;
+    }
+}
+@media screen and (max-width: 700px) {
+    #icons {
+        display: none;
+    }
+    #main {
+        display: none;
+    }
+    #main-res {
+        display: block;
+    }
+}
+@media screen and (max-width:  500px) {
+    .res-card {
+        width: 100%;
+        text-align: center;
+    }
+    .res-k img {
+        width: 100%;
+        margin: 10px 10px;
+    }
+    .res-slid img {
+        width: 100%;
+        margin: 10px;
+    }
+    .res-kinif {
+        width: 100%;
+    }
+    .res-kinif img {
+        width: 80%;
+    }
+}
+/* Main css end */

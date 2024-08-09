@@ -20,10 +20,10 @@ left.addEventListener("click", () => {
 const navScroll = document.querySelector("#navbar");
 window.addEventListener("scroll", () => {
     let top = window.scrollY;
-    if (top >= 20) {
+    if (top >= 40) {
         navScroll.style.position = "fixed"
     }
-    if (top <= 20) {
+    if (top <= 40) {
         navScroll.style.position = "sticky"
     }
 })
