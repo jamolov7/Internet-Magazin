@@ -274,6 +274,10 @@ a {
     color: #fff;
     font-size: x-large;
 }
+.main-imgs span img {
+    background-color: transparent;
+    border-radius: none;
+}
 .m-bold {
     font-weight: 700;
     color: #fff;
@@ -417,13 +421,26 @@ a {
     .res-kinif img {
         width: 80%;
     }
+    .res-text {
+        width: 100%;
+    }
 }
 /* Main css end */
 
 /* Cards css start */
+#cards {
+    border-bottom: 1px solid #141414;
+    padding: 10px;
+}
 #cards h2 {
     text-align: center;
     color: #fff;
+}
+.cards-all {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    justify-content: center;
+    margin-top: 20px;
 }
 .cards-inputs {
     background-color: #141414;
@@ -445,4 +462,393 @@ a {
     background-color: transparent;
     border: none;
 }
+.cards-card-div {
+    width: 300px;
+    height: 400px;
+    background-color: #141414;
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+}
+.cards-card {
+    height: 400px;
+    border-radius: 10px;
+    margin: 10px auto;
+}
+.cards-card-div {
+    height: 400px;
+}
+.card-imgs span {
+    position: absolute;
+    top: 0; right: 10px;
+    color: #fff;
+    font-size: x-large;
+}
+.card-imgs span:hover {
+    width: 60px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: red;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.card-imgs span:hover img {
+    display: flex;
+}
+.card-imgs span img {
+    width: 20px;
+    height: 20px;
+    display: none;
+    color: #fff;
+}
+.cards-img {
+    width: 300px;
+    height: 300px;
+}
+.cards-text {
+    display: none;
+    color: #fff;
+    font-weight: 700;
+    border-bottom: 2px solid red;
+    width: 140px;
+}
+@media screen and (max-width: 600px) {
+    .cards-text {
+        display: block;
+    }
+    .cards-inputs {
+        display: none;
+    }
+    #cards h2 {
+        display: none;
+    }
+    .cards-all {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    .cards-card {
+        width: 150px;
+        height: 230px;
+    }
+    .cards-card-div {
+        width: 150px;
+        height: 230px;
+    }
+    .cards-img  {
+        width: 150px;
+        height: auto;
+    }
+}
 /* Cards css end */
+
+/* Cards2 css start */
+#cards2 {
+    padding: 20px;
+}
+.cards2-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+.cards2-text div:first-child {
+    border-bottom: 1px solid red;
+}
+.cards2-text div:last-child {
+    color: gray;
+}
+.cards2-all {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 20px 0;
+    border-bottom: 1px solid #141414;
+    padding: 10px;
+}
+.cards2-text div {
+    margin: 0 10px;
+}
+.cards-card-div {
+    margin: 10px auto;
+}
+.m-price {
+    display: flex;
+    align-items: center;
+}
+@media screen and (max-width: 600px) {
+    .cards2-all {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    .cards-card-div {
+        margin: 10px auto;
+    }
+    .m-price div {
+        font-size: small;
+    }
+}
+@media screen and (max-width: 600px) {
+    #about {
+        display: none;
+    }
+}
+/* Cards2 css end */
+
+/* About css start */
+#about {
+    border-bottom: 1px solid #141414;
+    padding: 5px;
+}
+.about-card {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.about-text {
+    color: #fff;
+}
+.about-text p {
+    color: gray;
+}
+.about-img2 {
+    width: 300px;
+    display: none;
+}
+.about-card2 {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    display: none;
+}
+@media screen and (max-width: 992px) {
+    .about-card2 {
+        display: flex;
+    }
+    .about-img {
+        display: none;
+    }
+    .about-img2 {
+        display: block;
+    }
+    .about-card {
+        width: 100%;
+        padding: 10px;
+    }
+    .about-text h2 {
+        font-size: large;
+    }
+    .about-text {
+        padding: 5px;
+    }
+    .about-text p {
+        font-size: small;
+    }
+    .about-card2 {
+        width: 100%;
+        padding: 10px;
+    }
+}
+/* About css end */
+
+/* Novosti css start */
+#novosti {
+    width: 90%;
+    padding: 10px;
+    display: block;
+    justify-content: center;
+}
+#novosti h2 {
+    color: #fff;
+    margin-left: 100px;
+}
+.novosti-all {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 10px;
+}
+#novost-cards {
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px !important;
+}
+.novosti-card1 {
+    width: 380px;
+    height: 480px;
+    background: url(../img/Home-img/card/Rectangle\ 41.png) center no-repeat;
+    position: relative;
+}
+.novosti-card2 {
+    width: 380px;
+    height: 480px;
+    background: url(../img/Home-img/card/Rectangle\ 40.png) center no-repeat;
+    position: relative;
+}
+.novosti-card3 {
+    width: 380px;
+    height: 480px;
+    background: url(../img/Home-img/card/Rectangle\ 43.png) center no-repeat;
+    position: relative;
+}
+.n-card-all {
+    background: linear-gradient(#000000, #00000000);
+    height: 480px;
+    width: 380px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+.n-card-all:hover p {
+    background-color: red;
+}
+.n-card-all p {
+    width: 100%;
+    height: 150px;
+    padding: 5px;
+    height: auto;
+    color: #fff;
+    font-weight: 600;
+    position: absolute;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    bottom: -8px;
+}
+.novosti-data {
+    position: absolute;
+    top: 10px; right: 10px;
+    color: #fff;
+}
+@media screen and (max-width: 900px) {
+    #novosti {
+        width: 100%;
+    }
+    #novosti h2 {
+        margin: 0px;
+    }
+    .novosti-all {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .n-card-all {
+        width: 100%;
+    }
+    .n-card-all p {
+        bottom: -15px;
+    }
+    .novosti-card1 {
+        background: url(../img/Home-img/card/Rectangle\ 41\ \(1\).png);
+        background-size: cover;
+        width: 100%;
+    }
+    .novosti-card2 {
+        background: url(../img/Home-img/card/Rectangle\ 40\ \(1\).png);
+        background-size: cover;
+        width: 100%;
+    }
+    .novosti-card3 {
+        background: url(../img/Home-img/card/Rectangle\ 43\ \(1\).png);
+        background-size: cover;
+        width: 100%;
+    }
+    #novost-cards {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 600px) {
+    #novosti {
+        display: none;
+    }
+}
+/* Novosti css end */
+
+/* F-btn css start */
+#f-btn {
+    text-align: center;
+    color: #fff;
+    margin: 10px 0;
+    display: none;
+}
+.f-btn {
+    width: 250px;
+    padding: 10px;
+    background-color: #141414;
+    margin: 0 auto;
+}
+.f-btn input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+.f-btn button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+}
+/* F-btn css end */
+
+/* Footer css start */
+#footer {
+    background-color: #141414;
+    padding: 10px;
+}
+.footer-cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+}
+.footer-cards a {
+    color: #fff;
+    margin: 0 10px
+}
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+.footer-text {
+    font-weight: 700;
+    margin: 10px 0;
+}
+.footer-icons {
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-icon {
+    font-size: large;
+}
+@media screen and (max-width: 1000px) {
+    .footer-cards {
+        display: block;
+    }
+    .footer-logo {
+        width: 400px;
+    }
+    .footer-icons {
+        width: 400px;
+    }
+    #f-btn {
+        display: block;
+    }
+}
+@media screen and (max-width: 500px) {
+    .footer-logo {
+        width: 100%;
+    }
+    .footer-icons {
+        width: 100%;
+        display: block;
+    }
+    .footer-card p {
+        font-size: small;
+    }
+}
+/* Footer css end */
