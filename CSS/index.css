@@ -142,6 +142,26 @@ a {
     background-color: transparent;
     padding: 5px;
 }
+.main-imgs span:hover {
+    width: 60px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: red;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.main-imgs span:hover img {
+    display: flex;
+}
+.main-imgs span img {
+    width: 20px;
+    height: 20px;
+    display: none;
+    color: #fff;
+}
 /* Head-all css end */
 
 @media screen and (max-width: 600px) {
@@ -399,3 +419,30 @@ a {
     }
 }
 /* Main css end */
+
+/* Cards css start */
+#cards h2 {
+    text-align: center;
+    color: #fff;
+}
+.cards-inputs {
+    background-color: #141414;
+    width: 240px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 5px;
+    border-radius: 10px;
+}
+.cards-inputs input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+.cards-inputs button {
+    background-color: transparent;
+    border: none;
+}
+/* Cards css end */
