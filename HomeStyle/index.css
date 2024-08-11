@@ -217,11 +217,11 @@ a {
 #icons img {
     width: 50px;
 }
-#icons div {
+#icons a {
     color: gray;
     margin: 10px 0;
 }
-#icons div:hover {
+#icons a:hover {
     color: red;
 }
 /* Icons css end */
