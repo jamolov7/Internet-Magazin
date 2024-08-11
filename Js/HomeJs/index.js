@@ -17,6 +17,7 @@ menu.addEventListener("click", () => {
 left.addEventListener("click", () => {
     navbar.classList.remove("nav-trans")
 });
+
 const navScroll = document.querySelector("#navbar");
 window.addEventListener("scroll", () => {
     let top = window.scrollY;
@@ -26,4 +27,4 @@ window.addEventListener("scroll", () => {
     if (top <= 40) {
         navScroll.style.position = "sticky"
     }
-})
+});
