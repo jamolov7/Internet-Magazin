@@ -1,12 +1,4 @@
-var swiper = new Swiper(".mySwiper", {
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-      renderBullet: function (index, className) {
-        return '<span class="' + className + '">' + (index + 1) + "</span>";
-      },
-    },
-});
+
 const menu = document.querySelector(".bars");
 const navbar = document.querySelector(".nav-list");
 const left = document.querySelector(".nav-menu");
